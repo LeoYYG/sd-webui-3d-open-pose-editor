@@ -16,7 +16,7 @@ except NameError:
 
 
 def get_asset_url(
-    file_path: pathlib.Path, append: typing.Optional[dict[str, str]] = None
+    file_path: pathlib.Path, append: typing.Optional[typing.Dict[str, str]] = None
 ) -> str:
     if append is None:
         append = {"v": str(os.path.getmtime(file_path))}
